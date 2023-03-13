@@ -1,0 +1,29 @@
+﻿// browser.idl: browser.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(browser.tlb)。
+
+[ uuid(977b2362-78da-4045-8f21-728009766249), version(1.0) ]
+library browser
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CbrowserDoc 的主调度接口
+
+	[ uuid(ebb0bf12-bade-4363-a9fc-a5f810576c9c) ]
+	dispinterface Ibrowser
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CbrowserDoc 的类信息
+
+	[ uuid(73d80c10-388a-46c1-81b5-c2930900b617) ]
+	coclass browser
+	{
+		[default] dispinterface Ibrowser;
+	};
+};
